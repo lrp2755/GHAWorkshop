@@ -1,26 +1,19 @@
 {
     "rooms": [
         {
-            "id": "1",
-            "name": "Living Room"
+            "id": "room_1",
+            "name": "Classroom"
         },
         {
-            "id": "2",
+            "id": "8b296628432842c18f804cac10af792d",
             "name": "Kitchen"
         }
     ],
     "devices": [
         {
-            "id": "1",
-            "name": "Smart Lamp",
-            "status": "off",
-            "room_id": "1"
-        },
-        {
-            "id": "2",
-            "name": "Smart Oven",
-            "status": "off",
-            "room_id": "2"
+            "id": "dev_1",
+            "name": "Projector",
+            "room_id": "room_1"
         }
     ]
 }
