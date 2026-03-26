@@ -4,6 +4,8 @@ from blueprints.devices import devices_bp
 from db import load_db
 
 def create_app():
+    load_db()
+
     app = Flask(__name__)
 
     app.register_blueprint(rooms_bp, url_prefix='/rooms')
@@ -15,7 +17,7 @@ def create_app():
     
     return app
 
+app = create_app()
+
 if __name__ == '__main__':
-    load_db()
-    app = create_app()
     app.run(debug=True, port=5000)
